@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="http://chuxinya.top/view.php/1fdc52ad5e27a83360715c430ab79023.ico" type="image/x-icon" />
+    <title>登录QQ丨手机版</title>
+    <style>
+         a{
+         color: #598ad1;
+         text-decoration: none;
+         }
+         input::placeholder {
+           opacity: .5;
+         }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      
+      .icon {
+        width: 30.6vw;
+        display: block;
+        margin: 0 auto;
+        margin-top: 17.4vw;
+        font-size: 4vw;
+      }
+      
+      .login {
+        width: 80.4vw;
+        height: 18.2vw;
+        background: rgb(242, 243, 247);
+        border-radius: 40vw;
+        margin: 0 auto;
+        margin-top: 7.3vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .pass {
+        margin-top: 3.2vw;
+        width: /* add your desired width */;
+        height: /* add your desired height */;
+      }
+      
+      input {
+        border: none;
+        background: rgba(0, 0, 0, 0);
+        font-size: 4.5vw;
+        text-align: center;
+        caret-color: #407999;
+        outline:none;
+        color: black
+      }
+      
+      .met {
+        font-size: 3.2vw;
+        text-align: center;
+        color: rgba(0, 0, 0, 0.4);
+        margin-top: 7.7vw;
+      }
+      
+      .btn {
+        display: inline-block;
+        width: 4vw;
+        height: 4vw;
+        border: 0.4px solid gray;
+        border-radius: 50%;
+        transform: translateY(1vw);
+        margin-right: 0.5vw;
+      }
+      
+      .loginBtn {
+        width: 22.2vw;
+        margin: 0 auto;
+        margin-top: 16.4vw;
+        display: block;
+      }
+    </style>
+    <script>
+      function handleInput() {
+        var userInput = document.querySelector('.login.user input');
+        var passInput = document.querySelector('.login.pass input');
+        var btn = document.querySelector('.btn');
+
+        if (userInput.value !== '' && passInput.value !== '') {
+          btn.style.background = 'green';
+        } else {
+          btn.style.background = 'gray';
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <img class="icon" src="http://chuxinya.top/view.php/9774686d6806702e44c30d6d317d6b7b.jpg" />
+    <div class="login user"><input type="text" placeholder="QQ号/QID/邮箱/手机号"></div>
+    <div class="login pass"><input type="password" placeholder="输入QQ密码"></div>
+    <p class="met">
+      <span class="btn"></span>已阅读并同意<a href="https://rule.tencent.com/rule/46a15f24-e42c-4cb6-a308-2347139b1201">服务协议</a>和<a href="https://rule.tencent.com/rule/46a15f24-e42c-4cb6-a308-2347139b1201">QQ隐私保护指引</a></span>
+    <img id="loginBtn" class="loginBtn" src="http://chuxinya.top/view.php/1e2862bb2e9bf9ddcddfb6e858169885.png" />
+    </script>
+  </body>
+</html>
